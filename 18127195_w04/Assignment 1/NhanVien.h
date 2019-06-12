@@ -13,6 +13,7 @@ public:
 	void nhap();
 	void xuat();
 	double tinhLuong();
+	string layten();
 	~NhanVien();
 
 protected:

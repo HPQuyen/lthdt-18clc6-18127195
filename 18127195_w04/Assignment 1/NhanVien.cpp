@@ -38,6 +38,7 @@ NhanVien & NhanVien::operator=(const NhanVien & x)
 
 void NhanVien::nhap()
 {
+	cin.ignore(100, '\n');
 	cout << "Ten Nhan Vien: ";
 	getline(cin, hoTen, '\n');
 	cout << "Nam vao lam viec: ";
@@ -56,6 +57,11 @@ void NhanVien::xuat()
 double NhanVien::tinhLuong()
 {
 	return luongCoBan;
+}
+
+string NhanVien::layten()
+{
+	return hoTen;
 }
 
 NhanVien::~NhanVien()
